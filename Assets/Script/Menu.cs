@@ -5,13 +5,20 @@ using UnityEngine;
 public class Menu : MonoBehaviour
 {
     //set Pause menu as a panel, set inactive
-    //set Settings menu as a panel, set inactive
-    //create variable isPaused
+    public GameObject Pause_menu;
 
+    //set Settings menu as a panel, set inactive
+    public GameObject Settings_menu;
+    //create variable isPaused
+    public bool isPaused = false;
     // Start is called before the first frame update
     void Start()
     {
         
+    }
+    public void TogglePause()
+    {
+
     }
     //create a function that toggles pause on and off
     //make timescale 0 when paused and 1 when unpaused
