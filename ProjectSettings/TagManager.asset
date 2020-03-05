@@ -41,3 +41,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Map
+    uniqueID: 3345656341
+    locked: 0
+  - name: Decals
+    uniqueID: 650402595
+    locked: 0
+  - name: Play Area
+    uniqueID: 1160569813
+    locked: 0
+  - name: Effects
+    uniqueID: 3183921295
+    locked: 0
