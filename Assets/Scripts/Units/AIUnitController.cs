@@ -2,10 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerControlledUnit : MonoBehaviour
+public class AIUnitController : MonoBehaviour
 {
     BaseUnit unit;
-    // Start is called before the first frame update
+
+    public float moveTimer = .5f;
+
+
     void Start()
     {
         unit = GetComponent<BaseUnit>();
@@ -16,13 +19,10 @@ public class PlayerControlledUnit : MonoBehaviour
     {
         if (unit.active)
         {
-            if (unit.playerControlled)
+            if (!unit.playerControlled)
             {
 
-                // keys movement input
-                // check inputs and apply movement or attack if enemy in move square
-
-                // mouse point and click conroller
+                // Calculate where to move a
             }
 
         }

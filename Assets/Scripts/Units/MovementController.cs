@@ -63,7 +63,7 @@ public class MovementController : MonoBehaviour
             }
 
             transform.position += direction;
-            //UpdateFogOfWar();
+           // UpdateFogOfWar();
         }
     }
 
