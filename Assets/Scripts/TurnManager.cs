@@ -9,7 +9,7 @@ public class TurnManager : MonoBehaviour
     public Text turnText;
     public static bool endOfPlayerTurn;
     public static bool endOfEnemyTurn;
-    public float TurnEnds = 1;
+    public static float TurnEnds = 1;
 
     // Start is called before the first frame update
     void Start()
@@ -20,6 +20,7 @@ public class TurnManager : MonoBehaviour
     public void NextTurn()
     {
         turnNumber += 1;
+        TurnEnds += 1;
     }
 
     // Update is called once per frame
