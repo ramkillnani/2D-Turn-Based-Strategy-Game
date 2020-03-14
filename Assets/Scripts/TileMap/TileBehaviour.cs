@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Ant : Tank
+public class TileBehaviour : MonoBehaviour
 {
-    //set stats here
     // Start is called before the first frame update
     void Start()
     {

@@ -11,7 +11,7 @@ public class AIUnitController : MonoBehaviour
 
     void Start()
     {
-        unit = GetComponent<BaseUnit>();
+        //unit = units[currU]
     }
 
     // Update is called once per frame
@@ -26,5 +26,10 @@ public class AIUnitController : MonoBehaviour
             }
 
         }
+    }
+
+    public static void CalculateAITurn()
+    {
+        // Do AI Turn
     }
 }
