@@ -21,8 +21,7 @@ public class AIUnitController : MonoBehaviour
         {
             if (!unit.playerControlled)
             {
-
-                // Calculate where to move a
+                CalculateAITurn();
             }
 
         }
@@ -30,6 +29,8 @@ public class AIUnitController : MonoBehaviour
 
     public static void CalculateAITurn()
     {
+        Debug.Log("AI Unit Turn: " + UnitManager.gameUnits[UnitManager.currUnitTurn].name);
         // Do AI Turn
+
     }
 }

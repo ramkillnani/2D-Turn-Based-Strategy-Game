@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class Varient : BaseUnit
 {
-    public float unitTypeHealth = 5;
-    public float unitTypeSpeed = 5;
-    public float unitTypeAttack = 5;
-    public float unitTypeRange = 1;
+    public int unitTypeHealth = 5;
+    public int unitTypeSpeed = 5;
+    public int unitTypeAttack = 5;
+    public int unitTypeRange = 1;
     public bool unitTypeflys = false;
     
     // hmm do we need this?

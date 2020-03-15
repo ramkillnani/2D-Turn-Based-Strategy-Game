@@ -6,10 +6,10 @@ public class BaseUnit : MonoBehaviour
 {
 
     [Space(5), Header("Base Stats")]
-    public float baseHealth = 5;    
-    public float baseMovementSpeed = 5;
-    public float baseAttack = 5;
-    public float baseAttackRange = 1;
+    public int baseHealth = 5;    
+    public int baseMovementSpeed = 5;
+    public int baseAttack = 5;
+    public int baseAttackRange = 1;
     public bool canFly = false;
 
     [Space(5), Header("Current Stats")]
