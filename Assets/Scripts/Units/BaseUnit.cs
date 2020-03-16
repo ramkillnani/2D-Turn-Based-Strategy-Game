@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class BaseUnit : MonoBehaviour
 {
@@ -21,6 +22,8 @@ public class BaseUnit : MonoBehaviour
     public bool active = false;
     public bool playerControlled = false;
 
+    public GameObject statsDisplay;
+
 
     private void FixedUpdate()
     {
@@ -35,10 +38,5 @@ public class BaseUnit : MonoBehaviour
         }
     }
 
-
-
-
-   
-
-
+  
 }
