@@ -10,7 +10,8 @@ public class TurnManager : MonoBehaviour
    // public static bool endOfPlayerTurn;
    // public static bool endOfEnemyTurn;
     public static float TurnEnds = 1;
-        
+    public static bool PlayerTurn;
+    public Image button;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +20,15 @@ public class TurnManager : MonoBehaviour
     
     public void NextTurn()
     {
+        if (PlayerTurn == true)
+        {
+            PlayerTurn = false;
+            
+        }
+        else
+        {
+            PlayerTurn = true;
+        }
         turnNumber += 1;
         TurnEnds += 1;
 
@@ -28,6 +38,14 @@ public class TurnManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (PlayerTurn == true)
+        {
+            button.color = Color.blue;
+        }
+        else
+        {
+            button.color = Color.red;
+        }
         turnText.text = " " + turnNumber;
         if (TurnEnds >= 0)
         {

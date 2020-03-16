@@ -143,6 +143,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 4824177278466412633, guid: 081201b7f5b1a0445a3306b5e73fc243,
+        type: 3}
+      propertyPath: turnText
+      value: 
+      objectReference: {fileID: 109741964}
     - target: {fileID: 8769016665947386762, guid: 081201b7f5b1a0445a3306b5e73fc243,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
@@ -270,6 +275,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6f34032fbbd4d6c4889e25e5f5f10219, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &109741964 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7157420203015426573, guid: 081201b7f5b1a0445a3306b5e73fc243,
+    type: 3}
+  m_PrefabInstance: {fileID: 109741962}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &519420028
