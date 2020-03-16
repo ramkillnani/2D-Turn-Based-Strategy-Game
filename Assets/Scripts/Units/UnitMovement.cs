@@ -56,9 +56,10 @@ public class UnitMovement : MonoBehaviour
     */
 
 
-    
+
     //Maybe needed if using ray casts not using ray casts atm)
-    private LayerMask layerMask;
+    [SerializeField]
+    private LayerMask mask;
 
     // Path Finding Variable
     private Node current;
@@ -81,10 +82,15 @@ public class UnitMovement : MonoBehaviour
         {
             if (Input.GetMouseButtonDown(0))
             {
-                mousePos = Input.mousePosition;
-                tilePos = tileMap.WorldToCell(Camera.main.ScreenToWorldPoint(mousePos));                
 
-                if (tilePos != null)
+
+                mousePos = Input.mousePosition;
+                tilePos = tileMap.WorldToCell(Camera.main.ScreenToWorldPoint(mousePos));
+
+                //Thorws a raycast in the direction of the target
+                RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(mousePos), Vector2.zero, Mathf.Infinity, mask);
+
+                if (hit.collider != null)
                 {
 
                     /*
@@ -93,6 +99,9 @@ public class UnitMovement : MonoBehaviour
                     *   Insert Code Here
                     *
                     */
+
+                    Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                    Vector3Int clickPos = tileMap.WorldToCell(mouseWorldPos);
 
                     // Temporary movment code
                     // jumpt to mouse click
