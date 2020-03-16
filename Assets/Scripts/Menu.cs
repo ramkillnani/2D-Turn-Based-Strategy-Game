@@ -2,20 +2,38 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Menu : MonoBehaviour
 {
     //set Pause menu as a panel, set inactive
     public GameObject Pause_menu;
-
+    public Saving handle;
     //set Settings menu as a panel, set inactive
     public GameObject Settings_menu;
     //create variable isPaused
     public bool isPaused = false;
+    public InputField Name;
+    public TurnManager turn;
+    public int LevelNumber;
     // Start is called before the first frame update
     void Start()
     {
         
+    }
+    public void Save()
+    {
+
+        handle.NewScore(Name.text, LevelNumber, turn.turnNumber);
+        
+    }
+    public void Load(int Slot)
+    {
+        LevelNumber = handle.saveSlots[Slot].level;
+        turn.turnNumber = handle.saveSlots[Slot].turn;
+        ChangeLevel(LevelNumber);
+
+
     }
     public void TogglePause()
     {
@@ -58,6 +76,7 @@ public class Menu : MonoBehaviour
     public void NextLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1, LoadSceneMode.Single);
+        LevelNumber += 1;
     }
     public void Prevlevel()
     {
