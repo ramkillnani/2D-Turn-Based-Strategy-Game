@@ -22,7 +22,7 @@ public class BaseUnit : MonoBehaviour
     public bool active = false;
     public bool playerControlled = false;
 
-    public GameObject statsDisplay;
+    
 
 
     private void FixedUpdate()
